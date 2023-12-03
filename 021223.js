@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { posix } = require("path");
 
 let input = fs.readFileSync("021223.txt").toString().split("\n");
 
@@ -94,7 +93,6 @@ for (let gameIndex = 0; gameIndex < parsedInput.length; gameIndex++) {
       const value = Number(Object.values(gameSet)[0]);
       if (maxGameSet[colour] < value) {
         maxGameSet[colour] = value;
-        console.log(maxGameSet);
       }
     }
   }
