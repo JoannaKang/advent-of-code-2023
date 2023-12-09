@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { get } = require("http");
 let input = fs.readFileSync("071223.txt").toString().split("\n");
 // let input = fs.readFileSync("sample.txt").toString().split("\n");
 
