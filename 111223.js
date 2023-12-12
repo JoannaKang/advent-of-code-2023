@@ -1,7 +1,6 @@
 const fs = require("fs");
 let input = fs.readFileSync("111223.txt").toString().split("\n");
 // let input = fs.readFileSync("sample.txt").to\
-String().split("\n");
 // The image includes empty space (.) and galaxies
 // The researcher is trying to figure out the sum of the lengths of the shortest path between every pair of galaxies.
 
@@ -9,11 +8,6 @@ String().split("\n");
 
 // Expand the universe, then find the length of the shortest path between every pair of galaxies.
 // What is the sum of these lengths?
-
-// 확장된 우주의 맵 만들기 :
-// y축을 순회해 나가면서 x 좌표값이 같은 노드들중에 하나라도 #이 포함되어 있다면 break
-// y축 순회가 끝났다면 모든 x+1, y 좌표에 . 을 추가한다
-// .가 추가될때마다 width++
 
 const height = input.length;
 let width = input[0].length;
@@ -80,6 +74,7 @@ for (let galaxyIdx = 0; galaxyIdx < galaxies.length; galaxyIdx++) {
 }
 
 console.log(galaxies);
+
 let answer = 0;
 for (let galaxyIdx = 0; galaxyIdx < galaxies.length; galaxyIdx++) {
   for (
